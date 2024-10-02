@@ -1,0 +1,8 @@
+{% load myfilter %}
+<table border=1 style="width:300px">
+    {% for list in lists %}
+        <tr>
+            <td>{{ list.标题|show_title:10 }}</td>
+        </tr>
+    {% endfor %}
+</table>

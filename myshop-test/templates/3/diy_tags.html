@@ -1,0 +1,8 @@
+{% load mytags %}
+<table border=1 style="width:300px">
+    {% for list in lists %}
+        <tr>
+            <td>{% show_title list.标题 10 %}</td>
+        </tr>
+    {% endfor %}
+</table>

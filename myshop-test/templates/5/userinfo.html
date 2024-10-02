@@ -1,0 +1,10 @@
+<html>
+<head></head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form_obj.as_p }}
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

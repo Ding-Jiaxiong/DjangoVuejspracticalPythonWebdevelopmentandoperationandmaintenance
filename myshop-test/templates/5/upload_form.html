@@ -1,0 +1,8 @@
+<form enctype="multipart/form-data" action="" method="post">
+    {% csrf_token %}
+    {{ form_obj.as_p }}
+    <br/>
+    <input type="submit" value="文件上传"/>
+    <img src="/media/{{ user.headimg }}">
+</form>
+ 
